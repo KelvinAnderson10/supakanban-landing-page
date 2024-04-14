@@ -122,7 +122,7 @@ const App = () => {
           </div>
         </div >
       </section >
-      <section id='about-us' className='bg-[#84B5FF] border-b border-black snap-start snap-always w-full flex 
+      <section id='about-us' className='bg-[#23A094] border-b border-black snap-start snap-always w-full flex 
         flex-col items-center relative'>
         <div className='w-full gap-[32px] flex flex-col lg:flex-row justify-between items-center pt-[64px] lg:max-w-[75%] lg:h-screen'>
           <div className="bg-[url('/kelvin.png')] h-[250px] lg:h-full w-full max-w-[250px] lg:max-h-[400px] lg:max-w-[400px] bg-no-repeat bg-center bg-cover profile-img border-2 border-black"></div>

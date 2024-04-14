@@ -121,7 +121,7 @@ footer {
   bottom: 0;
   width: 100%;
   padding: 10px;
-  background-color: #FFA5C5;
+  background-color: #90A8ED;
   color: black;
   text-align: center;
   border-top: 1px solid black;
@@ -129,7 +129,7 @@ footer {
 
 .profile-img {
   animation: morph 8s ease-in-out infinite;
-  background-color: white;
+  background-color: #FE91E8;
 }
 
 @keyframes morph {
