@@ -1,0 +1,134 @@
+html,
+body {
+  overflow: hidden;
+  font-family: "Mabry pro", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  cursor: pointer;
+}
+
+.spin {
+  animation: logo-spin infinite 5s linear;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg) scale(0.7);
+  }
+  to {
+    transform: rotate(360deg) scale(0.7);
+  }
+}
+
+.nav {
+  position: fixed;
+  z-index: 100;
+  top: 5%;
+  border-radius: 16px;
+  border: 2px solid #222529;
+  box-shadow: 5px 5px black;
+  background-color: white;
+  width: 100%;
+  max-width: 1152px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+.nav-link {
+  text-decoration: none;
+  line-height: 24px;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  user-select: none;
+}
+
+.nav-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+/* Underline effect when hover */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: black;
+  transition: width .4s;
+}
+
+.nav-link:hover::after{
+  width: 100%;
+  transition: width .4s;
+}
+
+.primary-button {
+  border-radius: 8px;
+  border: 2px solid black;
+  box-shadow: 3px 4px black;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #FFECA8;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease;
+  color: black;
+}
+
+.primary-button:hover {
+  box-shadow: none;
+}
+
+.sec-button {
+  border-radius: 8px;
+  border: 2px solid black;
+  box-shadow: 3px 4px black;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: white;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease;
+  color: black;
+}
+
+.sec-button:hover {
+  box-shadow: none;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #FFA5C5;
+  color: black;
+  text-align: center;
+  border-top: 1px solid black;
+}
+
+.fancy {
+  -webkit-text-decoration: hotpink double underline;
+  text-decoration: hotpink double underline;
+  text-underline-offset: 2px;
+}
