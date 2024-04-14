@@ -7,6 +7,7 @@ import efficiency from '/efficiency.png'
 import idea from '/idea.png'
 import key from '/key.png'
 import stopwatch from '/stopwatch.png'
+import kelvin from '/kelvin.png'
 
 
 import AOS from "aos";
@@ -121,23 +122,11 @@ const App = () => {
           </div>
         </div >
       </section >
-      <section id='about-us' className='bg-[#A6DEB7] border-b border-black snap-start snap-always w-full flex 
+      <section id='about-us' className='bg-[#84B5FF] border-b border-black snap-start snap-always w-full flex 
         flex-col items-center relative'>
-        <div className='w-full flex flex-col lg:flex-row justify-between items-center pt-[64px] lg:max-w-[75%] lg:h-screen'>
-          <div className="max-w-[250px] lg:max-w-[450px]">
-            <img src={kanban} alt="Vite logo" />
-          </div>
-          <div className='w-1/2 text-wrap flex flex-col justify-center items-start'>
-            <p className='text-[50px] leading-tight font-bold'>SupaKanban As
-              Your Ultimate Task Manager</p>
-            <p className='text-[20px] mt-6'>Having struggle keeping all your tasks ? No worries !</p>
-            <p className='text-[20px] mt-2 mb-8'>Manage all your tasks all in a single website, with a simple interactive drag and drop. &#10084;&#65039;
-            </p>
-            <div className='flex gap-3'>
-              <input className='primary-input' placeholder='Your Email Address'></input>
-              <button className='primary-button'>Sign Up - Forever free!</button>
-            </div>
-          </div>
+        <div className='w-full gap-[32px] flex flex-col lg:flex-row justify-between items-center pt-[64px] lg:max-w-[75%] lg:h-screen'>
+          <div className="bg-[url('/kelvin.png')] h-[250px] lg:h-full w-full max-w-[250px] lg:max-h-[400px] lg:max-w-[400px] bg-no-repeat bg-center bg-cover profile-img border-2 border-black"></div>
+          <p className='w-2/3 text-center lg:text-left lg:w-1/2 text-3xl pb-[100px] lg:pb-0'>“I created this website because I am having struggle myself in keeping all my tasks organized”</p>
         </div>
         <footer>
           <p>Made & Designed with &#10084;&#65039; by Kelvin Anderson | All Rights Reserved.</p>
