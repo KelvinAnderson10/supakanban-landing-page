@@ -140,7 +140,7 @@ const App = () => {
           </div>
         </div>
         <footer>
-          <p>Made and designed with &#10084;&#65039; by Kelvin Anderson | All Rights Reserved.</p>
+          <p>Made & Designed with &#10084;&#65039; by Kelvin Anderson | All Rights Reserved.</p>
         </footer>
       </section>
 
