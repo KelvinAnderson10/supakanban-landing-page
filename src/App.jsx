@@ -125,7 +125,7 @@ const App = () => {
       <section id='about-us' className='bg-[#23A094] border-b border-black snap-start snap-always w-full flex 
         flex-col items-center relative'>
         <div className='w-full gap-[32px] flex flex-col lg:flex-row justify-between items-center pt-[64px] lg:max-w-[75%] lg:h-screen'>
-          <div className="bg-[url('/kelvin.png')] h-[250px] lg:h-full w-full max-w-[250px] lg:max-h-[400px] lg:max-w-[400px] bg-no-repeat bg-center bg-cover profile-img border-2 border-black"></div>
+          <div className="bg-[url('/kelvin.png')] h-[250px] lg:h-full w-full max-w-[250px] lg:max-h-[400px] lg:max-w-[400px] bg-no-repeat bg-center bg-cover profile-img border-[3px] border-black"></div>
           <p className='w-2/3 text-center lg:text-left lg:w-1/2 text-3xl pb-[100px] lg:pb-0'>“I created this website because I am having struggle myself in keeping all my tasks organized”</p>
         </div>
         <footer>
