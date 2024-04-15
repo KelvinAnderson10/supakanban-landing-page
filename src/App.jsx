@@ -74,48 +74,48 @@ const App = () => {
       {/* Feature Section */}
       <section id='feature' className='bg-[#EFCFAF] border-b border-black snap-start snap-always w-full flex 
         flex-col items-center'>
-        <div className='w-full flex flex-row justify-center gap-[32px] items-center pt-[80px] lg:max-w-[75%] h-screen'>
+        <div className='w-full flex flex-col lg:flex-row justify-center gap-[32px] items-center pt-[80px] max-w-[80%] lg:max-w-[75%] lg:h-screen'>
           {/* WHY SUPAKANBAN TEXT */}
-          <p className='text-[#A37059] text-[40px] font-semibold rotate-180 [writing-mode:vertical-rl] uppercase'>WHY SUPAKANBAN</p>
+          <p className='text-[#A37059] text-[40px] font-semibold text-center lg:rotate-180 lg:[writing-mode:vertical-rl] uppercase'>WHY SUPAKANBAN</p>
           {/* GRID (4 CONTAINER) */}
-          <div className="grid grid-cols-2 w-full justify-between gap-x-[24px] gap-y-[32px]">
-            <div className="h-[180px] rounded-lg bg-white border-2 border-solid 
-            border-gray-900 shadow-md flex flex-row items-center justify-between px-[30px] gap-[50px]">
+          <div className="py-8 lg:py-0 grid grid-cols-2 w-full justify-between gap-x-[24px] gap-y-[32px]">
+            <div className="lg:h-[180px] rounded-lg bg-white border-2 border-solid 
+            border-gray-900 shadow-md flex flex-col lg:flex-row items-center lg:justify-between py-[20px] px-[30px] gap-[20px] lg:gap-[50px]">
               <div className='shrink-0 bg-[#DD7DFF] rounded-full shadow-md w-[60px] h-[60px] border-2 border-solid border-black'>
                 <img src={efficiency} className='spin'></img>
               </div>
               <div className='flex flex-col'>
-                <p className='text-3xl font-bold flex-none'>Efficiency</p>
+                <p className='text-lg lg:text-3xl font-bold flex-none'>Efficiency</p>
                 <p className='text-wrap'>Enables users to efficiently structure tasks, projects, and ideas, reducing clutter and enhancing clarity in their workflows.</p>
               </div>
             </div>
-            <div className="h-[180px] rounded-lg bg-white border-2 border-solid 
-            border-gray-900 shadow-md flex flex-row items-center justify-between px-[30px] gap-[50px]">
+            <div className="lg:h-[180px] rounded-lg bg-white border-2 border-solid 
+            border-gray-900 shadow-md flex flex-col lg:flex-row items-center lg:justify-between py-[20px] px-[30px] gap-[20px] lg:gap-[50px]">
               <div className='shrink-0 bg-[#FFB443] rounded-full shadow-md w-[60px] h-[60px] border-2 border-solid border-black'>
                 <img src={stopwatch} className='spin'></img>
               </div>
               <div className='flex flex-col'>
-                <p className='text-3xl font-bold flex-none'>Productivity</p>
+                <p className='text-lg lg:text-3xl font-bold flex-none'>Productivity</p>
                 <p className='text-wrap'>Empowers individuals to manage their time effectively, prioritize tasks, and leading to increased efficiency and accomplishment.</p>
               </div>
             </div>
-            <div className="h-[180px] rounded-lg bg-white border-2 border-solid 
-            border-gray-900 shadow-md flex flex-row items-center justify-between px-[30px] gap-[50px]">
+            <div className="lg:h-[180px] rounded-lg bg-white border-2 border-solid 
+            border-gray-900 shadow-md flex flex-col lg:flex-row items-center lg:justify-between py-[20px] px-[30px] gap-[20px] lg:gap-[50px]">
               <div className='shrink-0 bg-[#FF5E5E] rounded-full shadow-md w-[60px] h-[60px] border-2 border-solid border-black'>
                 <img src={key} className='spin'></img>
               </div>
               <div className='flex flex-col'>
-                <p className='text-3xl font-bold flex-none'>Accessibility</p>
+                <p className='text-lg lg:text-3xl font-bold flex-none'>Accessibility</p>
                 <p className='text-wrap'>Offers a user-friendly interface and intuitive features, ensuring that users can easily utilize the platform to its fullest potential.</p>
               </div>
             </div>
-            <div className="h-[180px] rounded-lg bg-white border-2 border-solid 
-            border-gray-900 shadow-md flex flex-row items-center justify-between px-[30px] gap-[50px]">
+            <div className="lg:h-[180px] rounded-lg bg-white border-2 border-solid 
+            border-gray-900 shadow-md flex flex-col lg:flex-row items-center lg:justify-between py-[20px] px-[30px] gap-[20px] lg:gap-[50px]">
               <div className='shrink-0 bg-[#A6DEB7] rounded-full shadow-md w-[60px] h-[60px] border-2 border-solid border-black'>
                 <img src={idea} className='spin'></img>
               </div>
               <div className='flex flex-col'>
-                <p className='text-3xl font-bold flex-none'>Insight</p>
+                <p className='text-lg lg:text-3xl font-bold flex-none'>Insight</p>
                 <p className='text-wrap'>Provides valuable insights into project timelines, enabling users to make informed decisions.</p>
               </div>
             </div>
