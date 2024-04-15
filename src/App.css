@@ -37,13 +37,6 @@ a {
   user-select: none;
 }
 
-.nav-left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
-}
-
 /* Underline effect when hover */
 .nav-link::after {
   content: '';

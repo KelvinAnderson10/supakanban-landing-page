@@ -30,9 +30,9 @@ const App = () => {
       <div className='fixed z-50 top-[5%] border-2 border-gray-900 rounded-2xl shadow-md bg-white w-full flex justify-between items-center px-4 py-3 max-w-[90%] lg:max-w-[75%] lg:px-16 lg:py-3'>
         <div className='flex w-full justify-between items-center lg:w-max lg:justify-center lg:items-center lg:gap-[32px]'>
           <a onClick={() => scrollSmoothTo('home')} className='text-[24px] text-red-600 mr-6 font-bold'>SupaKanban</a>
-          <a onClick={() => scrollSmoothTo('home')} className='hidden lg:inline lg:text-[18px] lg:font-medium'>Home</a>
-          <a onClick={() => scrollSmoothTo('feature')} className='hidden lg:inline lg:text-[18px] lg:font-medium'>Features</a>
-          <a onClick={() => scrollSmoothTo('about-us')} className='hidden lg:inline lg:text-[18px] lg:font-medium'>About Us</a>
+          <a onClick={() => scrollSmoothTo('home')} className='hidden nav-link lg:inline lg:text-[18px] lg:font-medium'>Home</a>
+          <a onClick={() => scrollSmoothTo('feature')} className='hidden nav-link lg:inline lg:text-[18px] lg:font-medium'>Features</a>
+          <a onClick={() => scrollSmoothTo('about-us')} className='hidden nav-link lg:inline lg:text-[18px] lg:font-medium'>About Us</a>
           <button className='inline bg-[#FFECA8] text-black font-medium rounded-md 
             shadow-sm py-2 px-5 cursor-pointer transition shadow-md duration-250 
             ease-in-out hover:shadow-none border-2 border-black text-nowrap lg:hidden'
