@@ -2,23 +2,141 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: 'Mabry pro';
-    src: url(fonts/MabryPro-Regular.woff) format('woff');
-    font-style: normal;
-    font-weight: 400;
+@layer base {
+  section {
+    @apply border-b border-black;
+    @apply snap-start snap-always;
+    @apply w-full flex flex-col items-center;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-lg bg-white border-2 border-solid border-gray-900 shadow-md
+    flex flex-col items-center py-[20px] px-[30px] gap-[20px] 
+    lg:flex-row lg:justify-between lg:h-[180px] lg:gap-[50px]
+  }
+
+  .icon {
+    @apply shrink-0 rounded-full shadow-md w-[60px] h-[60px] 
+    border-2 border-solid border-black
+  }
+
+  .card-title {
+    @apply font-bold flex-none text-lg text-center lg:text-left lg:text-3xl 
+  }
+
+  .card-description {
+    @apply text-xs text-center text-wrap lg:text-left lg:text-base
+  }
+
+  .nav-link {
+    @apply hidden no-underline text-black text-base font-normal relative cursor-pointer
+    lg:inline lg:text-lg lg:font-medium; /* Responsive styles */
+  }
 }
 
 @font-face {
-    font-family: 'Mabry pro';
-    src: url(fonts/MabryPro-Medium.woff) format('woff');
-    font-style: normal;
-    font-weight: 500;
+  font-family: 'Mabry pro';
+  src: url(fonts/MabryPro-Regular.woff) format('woff');
+  font-style: normal;
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Mabry pro';
-    src: url(fonts/MabryPro-Bold.woff) format('woff');
-    font-style: normal;
-    font-weight: 700;
+  font-family: 'Mabry pro';
+  src: url(fonts/MabryPro-Medium.woff) format('woff');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Mabry pro';
+  src: url(fonts/MabryPro-Bold.woff) format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+
+html,
+body {
+  overflow: hidden;
+  font-family: "Mabry pro", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  cursor: pointer;
+}
+
+.spin {
+  animation: logo-spin infinite 5s linear;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg) scale(0.7);
+  }
+  to {
+    transform: rotate(360deg) scale(0.7);
+  }
+}
+
+/* Underline effect when hover */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: black;
+  transition: width .4s;
+}
+
+.nav-link:hover::after{
+  width: 100%;
+  transition: width .4s;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #90A8ED;
+  color: black;
+  text-align: center;
+  border-top: 1px solid black;
+}
+
+.profile-img {
+  animation: morph 8s ease-in-out infinite;
+  background-color: #FE91E8;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  20% {
+    border-radius: 45% 50% 55% 50%/55% 55% 45% 50%;
+  }
+  40% {
+    border-radius: 35% 55% 65% 45%/60% 50% 35% 50%;
+  }
+  60% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  80% {
+    border-radius: 40% 50% 60% 50%/50% 55% 40% 50%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
 }
