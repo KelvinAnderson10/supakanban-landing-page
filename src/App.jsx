@@ -154,7 +154,7 @@ const App = () => {
             lg:max-h-[400px] lg:max-w-[400px] lg:h-full"></div>
           <div className='w-2/3 flex flex-col gap-4 pb-[100px] lg:pb-0  lg:w-1/2'>
             <p className='text-center text-3xl lg:text-left'>
-              “With this platform, I aim to facilitate seamless task management for all users.”
+              "Through this platform, we aim to facilitate seamless task management for all users.”
             </p>
             <p className='text-center text-xl lg:text-left'>- Founder of SupaKanban</p>
           </div>
