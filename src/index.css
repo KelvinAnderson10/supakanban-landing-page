@@ -6,53 +6,53 @@
   section {
     @apply border-b border-black;
     @apply snap-start snap-always;
-    @apply w-full flex flex-col items-center;
+    @apply flex w-full flex-col items-center;
   }
 }
 
 @layer components {
   .card {
-    @apply rounded-lg bg-white border-2 border-solid border-gray-900 shadow-md
-    flex flex-col items-center py-[20px] px-[30px] gap-[20px] 
-    lg:flex-row lg:justify-between lg:h-[180px] lg:gap-[50px]
+    @apply flex flex-col items-center gap-[20px] rounded-lg border-2
+    border-solid border-gray-900 bg-white px-[30px] py-[20px] shadow-md 
+    lg:h-[180px] lg:flex-row lg:justify-between lg:gap-[50px];
   }
 
   .icon {
-    @apply shrink-0 rounded-full shadow-md w-[60px] h-[60px] 
-    border-2 border-solid border-black
+    @apply h-[60px] w-[60px] shrink-0 rounded-full border-2 
+    border-solid border-black shadow-md;
   }
 
   .card-title {
-    @apply font-bold flex-none text-lg text-center lg:text-left lg:text-3xl 
+    @apply flex-none text-center text-lg font-bold lg:text-left lg:text-3xl;
   }
 
   .card-description {
-    @apply text-xs text-center text-wrap lg:text-left lg:text-base
+    @apply text-wrap text-center text-xs lg:text-left lg:text-base;
   }
 
   .nav-link {
-    @apply hidden no-underline text-black text-base font-normal relative cursor-pointer
+    @apply relative hidden cursor-pointer text-base font-normal text-black no-underline
     lg:inline lg:text-lg lg:font-medium; /* Responsive styles */
   }
 }
 
 @font-face {
-  font-family: 'Mabry pro';
-  src: url(fonts/MabryPro-Regular.woff) format('woff');
+  font-family: "Mabry pro";
+  src: url(fonts/MabryPro-Regular.woff) format("woff");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Mabry pro';
-  src: url(fonts/MabryPro-Medium.woff) format('woff');
+  font-family: "Mabry pro";
+  src: url(fonts/MabryPro-Medium.woff) format("woff");
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
-  font-family: 'Mabry pro';
-  src: url(fonts/MabryPro-Bold.woff) format('woff');
+  font-family: "Mabry pro";
+  src: url(fonts/MabryPro-Bold.woff) format("woff");
   font-style: normal;
   font-weight: 700;
 }
@@ -88,19 +88,19 @@ a {
 
 /* Underline effect when hover */
 .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -5px;
   left: 0;
   width: 0;
   height: 3px;
   background: black;
-  transition: width .4s;
+  transition: width 0.4s;
 }
 
-.nav-link:hover::after{
+.nav-link:hover::after {
   width: 100%;
-  transition: width .4s;
+  transition: width 0.4s;
 }
 
 footer {
@@ -109,7 +109,7 @@ footer {
   bottom: 0;
   width: 100%;
   padding: 10px;
-  background-color: #90A8ED;
+  background-color: #90a8ed;
   color: black;
   text-align: center;
   border-top: 1px solid black;
@@ -117,7 +117,7 @@ footer {
 
 .profile-img {
   animation: morph 8s ease-in-out infinite;
-  background-color: #FE91E8;
+  background-color: #fe91e8;
 }
 
 @keyframes morph {
